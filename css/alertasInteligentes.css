@@ -1,0 +1,154 @@
+:root {
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space: 24px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xlg: 64px;
+  --screen-xs: 360px;
+  --screen-sm: 768px;
+  --screen-md: 992px;
+  --screen-lg: 1280px;
+  --screen-xlg: 1440px;
+  --border: 1px;
+  --border-color: #e5e5e5;
+  --highlight-color: #ffd3a8;
+  --text-color: #676a6c;
+  --bg-zeeng: #F3F3F4;
+  --border-input-select: #55898d;
+  --zeeng-green: #18a689;
+}
+
+body{
+  background-color:var(--bg-zeeng);
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.vueContainer{
+  background-color:var(--bg-zeeng);
+  padding:30px 30px 30px 30px;
+}
+
+.containerVue{
+  padding-left:40px;
+  padding-top:10px;
+  padding-botton:10px;
+  padding-right:40px;
+  background-color:white;
+  border-radius:2px;
+  border:1px solid #e5e6e7;
+}
+
+.label{
+  text-align:right;
+  padding:10px;
+}
+
+@media (max-width: 992px) {
+  .label{
+    text-align:left;
+  }
+  
+}
+
+
+.inputContainer{
+  gap:20px;
+  align-items:center;
+}
+
+.emails, .emailsExternos, .telefones, .link, .envio, .footer {
+  padding:20px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+.footer{
+  gap:30px;
+  border:0px;
+}
+
+.groupBtn {
+  gap:2px;
+  display:flex;
+}
+
+.groupBtn .left{
+  background-color:var(--zeeng-green);
+  border-radius:4px 0px 0px 4px;
+}
+
+.groupBtn .midle{
+  background-color:var(--zeeng-green);
+  border-radius:px;
+}
+
+.groupBtn .right{
+  background-color:var(--zeeng-green);
+  border-radius:0px 4px 4px 0px;
+}
+
+.btnComp{
+  padding:8px 16px;
+  color:white;
+}
+
+.cp{
+  position:absolute;
+  right:52px;
+  border-left:1px solid var(--border-color);
+  border-radius:0px 2px 2px 0px;
+  padding:6px 15px 6px 15px;
+  color:var(--text-color);
+  cursor:pointer;
+  user-select:none;
+}
+.cp:hover{
+  background-color: var(--border-color);
+}
+
+.groupBtnClip {
+  border:1px solid var(--border-color);
+  border-radius:4px;
+  background-color:white;
+  display:flex;
+}
+.groupBtnClip .left  {
+  border-radius:4px 0px 0px 4px;
+}
+.groupBtnClip .midle  {}
+.groupBtnClip .right  {
+
+  border-radius:0px 4px 4px 0px;
+}
+
+
+.btnCompClip{
+  padding:8px 16px;
+  display:flex;
+  align-items:center;
+  color:#1ab394;
+}
+
+.btnCompClip:hover{
+  background-color:var(--zeeng-green);
+  color:white;
+}
+.btnCompClipSelect{
+
+}
+
+.alerta{
+  border:1px solid var(--border-color);
+  border-radius:2px;
+  background-color:white;
+  margin-bottom:20px;
+}
+
+.bgg{
+}
+

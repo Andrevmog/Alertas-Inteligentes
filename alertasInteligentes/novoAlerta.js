@@ -1,32 +1,32 @@
-
-var listaAlertas = Vue.component("novo-alerta", {
-    name: "novo-alerta",
-    props: {},
-    data() {
-      return {
-            aplicarCor1:false,
-            aplicarCor2:false,
-            aplicarCor3:false,
-            plus1:false,
-            plus2:false,
-            plus3:false,
-      };
+var novoAlerta = Vue.component("novo-alerta", {
+  name: "novo-alerta",
+  props: {},
+  data() {
+    return {
+      aplicarCor1: false,
+      aplicarCor2: false,
+      aplicarCor3: false,
+      plus1: false,
+      plus2: false,
+      plus3: false,
+    };
+  },
+  created() {},
+  mounted() {},
+  methods: {
+    selecionarAlerta(alerta) {
+      if (alerta == this.alertaSelecionado) {
+        this.alertaSelecionado = "";
+      } else {
+        this.alertaSelecionado = alerta;
+      }
     },
-    created() {},
-    mounted() {},
-    methods: {
-        selecionarAlerta(alerta){
-           if(alerta == this.alertaSelecionado){
-               this.alertaSelecionado='';
-           }else{
-               this.alertaSelecionado=alerta;
-           }
-        },
-    },
-    watch: {},
-    computed: {},
-    template:`
-    <div class="containerListaAlertas">
+  },
+  watch: {},
+  computed: {},
+  template: `
+    <div class="vueContainer">
+      <div class="containerVue">
         <div class="form">
             <div>
                 <span>
@@ -75,74 +75,8 @@ var listaAlertas = Vue.component("novo-alerta", {
                 </div>
             </div>
         </div>
-  </div>`
-    ,
-  });
-  
-  const listaAlertasStyle = {
-    containerListaAlertas: `display:flex;flex-direction:column;gap:20px;`,
-  };
-  
-  const listaMock = [
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 1",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 3",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 4",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 5",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "anexo",
-      nomeAlerta: "Alerta 6",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "sms",
-      nomeAlerta: "Alerta 7",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 8",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 9",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-    {
-      tipoAlerta: "clip",
-      nomeAlerta: "Alerta 10",
-      dataCriacao: "01/01/2021",
-      autor: "Maiara",
-    },
-  ];
-  new Vue({ el: "#novo-alerta" });
+      </div>
+  </div>`,
+});
+
+new Vue({ el: "#novoAlerta" });
