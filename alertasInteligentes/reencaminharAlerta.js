@@ -6,8 +6,11 @@ var reencaminharAlertas = Vue.component("reencaminhar-alertas", {
       pesquisaNomeAlerta: "",
       lista: listaMock,
       style: listaAlertasStyle,
-      tipoAlertaSelecionado: "clip",
+      tipoSelecionado: "clip",
       alertaSelecionado: {},
+      dados:{
+        link:'https:www.zeeng.com.br'
+      }
     };
   },
   created() {},
@@ -53,57 +56,15 @@ var reencaminharAlertas = Vue.component("reencaminhar-alertas", {
             <div class="inputContainer d-flex col-md-12 col-lg-8"><input class="form-control"/><i class="fas fa-check-circle"></i></div>
           </div>
 
-          <copiarLink value="valor temporario" mostrarCheck />
+          <copiarLink :value="dados.link" mostrarCheck />
 
           <div class="footer d-flex flex-row-reverse">
-              <button class="btn btn-primary">Cancelar</button>
-              <button class="btn btn-primary">Enviar</button>
+            <Button white label="Cancelar"/>
+            <Button white label="Enviar"/>
           </div>
         </div>
       </div>
 
-
-  `,
-});
-
-var copiarLink = Vue.component("copiarLink", {
-  name: "copiarLink",
-  props: {
-    value:{
-      type:String,
-      required:true,
-    },
-    mostrarCheck:Boolean,
-  },
-  data() {
-    return {
-    };
-  },
-  created() {},
-  mounted() {},
-  methods: {
-    selecionarAlerta(alerta) {
-      if (alerta == this.alertaSelecionado) {
-        this.alertaSelecionado = '';
-      } else {
-        this.alertaSelecionado = alerta;
-      }
-    },
-  },
-  watch: {},
-  computed: {},
-  template: `
-
-    <div class="">
-        <div class="link row">
-          <div class="label col-md-12 col-lg-4">Link</div>
-          <div class="inputContainer d-flex col-md-12 col-lg-8">
-            <input v-model="value" class="form-control"/>
-            <span class="cp">Copiar</span>
-            <i v-if="mostrarCheck" class="fas fa-check-circle"></i>
-          </div>
-        </div>
-    </div>
 
   `,
 });
@@ -114,62 +75,62 @@ const listaAlertasStyle = {
 };
 
 const listaMock = [{
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 1",
+    tipo: "clip",
+    nome: "Alerta 1 Alerta 2 Alerta 3",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "",
+    tipo: "clip",
+    nome: "sem nome",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 3",
+    tipo: "clip",
+    nome: "Alerta 3",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 4",
+    tipo: "clip",
+    nome: "Alerta 4",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 5",
+    tipo: "clip",
+    nome: "Alerta 5",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "anexo",
-    nomeAlerta: "Alerta 6",
+    tipo: "anexo",
+    nome: "Alerta 6",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "sms",
-    nomeAlerta: "Alerta 7",
+    tipo: "sms",
+    nome: "Alerta 7",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 8",
+    tipo: "clip",
+    nome: "Alerta 8",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 9",
+    tipo: "clip",
+    nome: "Alerta 9",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },
   {
-    tipoAlerta: "clip",
-    nomeAlerta: "Alerta 10",
+    tipo: "clip",
+    nome: "Alerta 10",
     dataCriacao: "01/01/2021",
     autor: "Maiara",
   },

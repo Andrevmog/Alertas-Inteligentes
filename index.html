@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+
+      <div id="tiposDeAlertas">
+      <tipos-alertas></tipos-alertas>
+    </div>
+
+    <div id="historicoEnvioAlertas" idalerta="1234">
+      <historico-envio-alertas></historico-envio-alertas>
+    </div>
+
     <div id="listaAlertas">
       <lista-alertas></lista-alertas>
     </div>
@@ -26,22 +35,17 @@
       <reencaminhar-alertas></reencaminhar-alertas>
     </div>
 
-    <div id="historicoAlertas">
-      <historico-alertas></historico-alertas>
-    </div>
-
-
     <div id="novoAlerta">
       <novo-alerta></novo-alerta>
     </div>
 
-
-    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="components/smallComponents.js"></script>
     <script src="./alertasInteligentes/reencaminharAlerta.js"></script>
     <script src="./alertasInteligentes/listaAlertas.js"></script>
     <script src="./alertasInteligentes/historicoAlertas.js"></script>
     <script src="./alertasInteligentes/novoAlerta.js"></script>
+    <script src="./alertasInteligentes/tiposDeAlertas.js"></script>
   </body>
 
   </html>

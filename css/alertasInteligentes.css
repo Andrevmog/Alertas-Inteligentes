@@ -18,6 +18,7 @@
   --bg-zeeng: #F3F3F4;
   --border-input-select: #55898d;
   --zeeng-green: #18a689;
+  --zeeng-bg: #F3F3F4;
 }
 
 body{
@@ -79,7 +80,7 @@ body{
 
 .groupBtn .left{
   background-color:var(--zeeng-green);
-  border-radius:4px 0px 0px 4px;
+  border-radius:3px 0px 0px 3px;
 }
 
 .groupBtn .midle{
@@ -89,7 +90,7 @@ body{
 
 .groupBtn .right{
   background-color:var(--zeeng-green);
-  border-radius:0px 4px 4px 0px;
+  border-radius:0px 3px 3px 0px;
 }
 
 .btnComp{
@@ -99,16 +100,16 @@ body{
 
 .cp{
   position:absolute;
+  background-color:var(--zeeng-green);
   right:52px;
   border-left:1px solid var(--border-color);
   border-radius:0px 2px 2px 0px;
   padding:6px 15px 6px 15px;
-  color:var(--text-color);
+  color:white;
   cursor:pointer;
   user-select:none;
 }
 .cp:hover{
-  background-color: var(--border-color);
 }
 
 .groupBtnClip {
@@ -152,3 +153,131 @@ body{
 .bgg{
 }
 
+
+.miniButton{
+  color:var(--text-color)
+}
+
+.miniButton:hover{
+  color:var(--zeeng-green);
+}
+
+
+.iconList{
+  color:var(--zeeng-green)
+}
+
+.resumoAlerta{
+  border-top:1px solid var(--border-color);
+}
+
+.miniButtonIcon{
+  border:1px solid var(--border-color)
+}
+
+.chevronIcon{
+  color:var(--zeeng-green);
+  border-radius:6px;
+  padding:4px 4px 3px 4px;
+}
+
+.chevronIcon:hover{
+  background-color:var(--zeeng-bg)
+}
+
+.buttonComponent{
+  width:180px;
+  background-color:white !important;
+  border:1px solid var(--border-color) !important;
+  border-radius:3px !important;
+  padding-left:30px !important;
+  padding-right:30px !important;
+}
+
+.buttonGreen{
+  background-color:var(--zeeng-green) !important;
+  color:white !important;
+}
+
+.buttonGreen:hover{
+}
+
+.light:hover{
+  background-color:var(--zeeng-green) !important;
+}
+
+
+input{
+  border:1px solid var(--border-color) !important;
+  border-radius:3px !important;
+}
+
+.optionSelect{
+  background-color:var(--zeeng-green);
+  color:white;
+}
+.optionSelect:hover{
+  background-color:var(--border-color);
+}
+
+.date-left{
+  border-radius:2px 0px 0px 2px !important;
+}
+.date-right{
+  border-radius:0px 2px 2px 0px !important;
+}
+
+.date-middle{
+  align-items:center;
+  color:var(--text-color);
+  display:flex;
+  padding:0px 10px 0px 10px;
+  border-top:1px solid var(--border-color);
+  border-bottom:1px solid var(--border-color)
+}
+
+.cardComponent{
+  display:flex;
+  background-color:white;
+  border-radius:2px;
+  border-left:3px solid #e5e5e5;
+  border-right:1px solid #e5e6e7;
+  border-top:1px solid #e5e6e7;
+  border-bottom:1px solid #e5e6e7;
+  min-height:100%;
+  color:var(--text-color) ;
+}
+
+.cardComponent:hover{
+  border-left:3px solid var(--zeeng-green);
+  color:var(--zeeng-green)
+}
+
+.cardText{
+  padding-left:40px;
+  padding-top:10px;
+  padding-botton:10px;
+  padding-right:40px;
+  background-color:white;
+  border-radius:2px;
+  border:1px solid #e5e6e7;
+}
+
+.centerAll{
+  display:flex;
+  align-items:center;
+}
+
+.iconGray{
+  color:var(--border-color)
+}
+
+.textGray{
+  color:var(--text-color)
+}
+
+
+
+.forceTextColor{
+  color:var(--text-color) !important;
+}
