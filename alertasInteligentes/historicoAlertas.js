@@ -1,3 +1,8 @@
+// Exemplo da chamada no HTML
+// <div id="historicoEnvioAlertas" idalerta="1234">
+//   <historico-envio-alertas></historico-envio-alertas>
+// </div>
+
 var historicoEnvioAlertas = Vue.component("historico-envio-alertas", {
   name: "historico-envio-alertas",
   props: {},
@@ -38,6 +43,15 @@ var historicoEnvioAlertas = Vue.component("historico-envio-alertas", {
   computed: {},
   template: `
   <div class="vueContainer">
+    
+    <div class="containerVue p-4">
+
+            <DropDown class="col-3" />
+
+    </div>
+
+
+
     <div class="containerVue" style="background-color:#F3F3F4">
 
       <div class="row mb-2">

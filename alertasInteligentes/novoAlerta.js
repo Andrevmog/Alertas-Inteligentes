@@ -1,3 +1,8 @@
+// Exemplo da chamada no HTML
+// <div id="novoAlerta">
+//   <novo-alerta></novo-alerta>
+// </div>
+
 var novoAlerta = Vue.component("novo-alerta", {
   name: "novo-alerta",
   props: {},

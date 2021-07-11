@@ -1,3 +1,10 @@
+// Exemplo da chamada no HTML
+// <div id="reencaminharAlertas">
+//   <reencaminhar-alertas></reencaminhar-alertas>
+// </div>
+
+
+
 var reencaminharAlertas = Vue.component("reencaminhar-alertas", {
   name: "reencaminhar-alertas",
   props: {},

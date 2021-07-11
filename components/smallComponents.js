@@ -184,3 +184,41 @@ var DateRange = Vue.component("DateRange", {
   </div>
   `,
 });
+
+var DropDown = Vue.component("DropDown", {
+  name: "DropDown", 
+  props: {
+    periodo: {
+      data_inicial:{
+        type:String,
+      },
+      data_final:{
+        type:String,
+      }
+    },
+  },
+  data() {
+    return {
+      valorSelecionado:'Especifico',
+      isOpen:true,
+    };
+  },
+  created() {},
+  mounted() {},
+  methods: {
+  },
+  watch: {},
+  computed: {},
+  template: `
+<div class="dropdown">
+  <button @click="isOpen = !isOpen" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div v-if="isOpen" class="dropDownContainer" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+  `,
+});
